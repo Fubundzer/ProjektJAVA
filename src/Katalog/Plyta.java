@@ -3,7 +3,7 @@ package Katalog;
 import java.util.Vector;
 import java.util.Scanner;
 
-public class Plyta {
+public abstract class Plyta {
 	String autor, tytul, gatunek;
 	int ilosc_p, data;
 	Vector<Piosenka> lista = new Vector<Piosenka>();
@@ -118,7 +118,9 @@ public class Plyta {
 	int get_iloscp()
 	{
 		return ilosc_p;
-	};
+	}
+	
+	abstract void typmenu();
 	/*int wyszukiwanie()
 	{
 		int i=1;
